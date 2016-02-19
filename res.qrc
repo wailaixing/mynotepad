@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/111.jpg</file>
+        <file>images/copy.bmp</file>
+        <file>images/cut.bmp</file>
+        <file>images/new.bmp</file>
+        <file>images/open.gif</file>
+        <file>images/paste.bmp</file>
+        <file>images/save as.gif</file>
+        <file>images/save.gif</file>
+        <file>images/close.gif</file>
+        <file>images/font.gif</file>
+        <file>images/clear.gif</file>
+        <file>images/print.gif</file>
+        <file>images/Date.gif</file>
+        <file>images/222.jpg</file>
+    </qresource>
+</RCC>

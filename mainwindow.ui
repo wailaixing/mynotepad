@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>441</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/images/222.jpg);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>437</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen_N"/>
+    <addaction name="actionSave_S"/>
+    <addaction name="actionLingcuwei"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrinter_P"/>
+    <addaction name="actionQuit_Q"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="undoAction"/>
+    <addaction name="redoAction"/>
+    <addaction name="separator"/>
+    <addaction name="copyAction"/>
+    <addaction name="pasteAction"/>
+    <addaction name="cutAction"/>
+    <addaction name="selectAllAction"/>
+    <addaction name="separator"/>
+    <addaction name="datetimeAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>格式</string>
+    </property>
+    <addaction name="actionFont"/>
+    <addaction name="actionColor"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionWebsite"/>
+    <addaction name="actionUpdate"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_N"/>
+   <addaction name="actionNew"/>
+   <addaction name="actionSave_S"/>
+   <addaction name="actionLingcuwei"/>
+   <addaction name="separator"/>
+   <addaction name="copyAction"/>
+   <addaction name="pasteAction"/>
+   <addaction name="cutAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/new.bmp</normaloff>:/new/prefix1/images/new.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>new(&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionOpen_N">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/open.gif</normaloff>:/new/prefix1/images/open.gif</iconset>
+   </property>
+   <property name="text">
+    <string>open(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionSave_S">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/save.gif</normaloff>:/new/prefix1/images/save.gif</iconset>
+   </property>
+   <property name="text">
+    <string>save(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionLingcuwei">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/save as.gif</normaloff>:/new/prefix1/images/save as.gif</iconset>
+   </property>
+   <property name="text">
+    <string>save as(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionPrinter_P">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/print.gif</normaloff>:/new/prefix1/images/print.gif</iconset>
+   </property>
+   <property name="text">
+    <string>printer(&amp;P)</string>
+   </property>
+  </action>
+  <action name="actionQuit_Q">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/close.gif</normaloff>:/new/prefix1/images/close.gif</iconset>
+   </property>
+   <property name="text">
+    <string>quit(&amp;Q)</string>
+   </property>
+  </action>
+  <action name="undoAction">
+   <property name="text">
+    <string>undo(&amp;U)</string>
+   </property>
+  </action>
+  <action name="redoAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/clear.gif</normaloff>:/new/prefix1/images/clear.gif</iconset>
+   </property>
+   <property name="text">
+    <string>redo(&amp;R)</string>
+   </property>
+  </action>
+  <action name="copyAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/copy.bmp</normaloff>:/new/prefix1/images/copy.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>copy(&amp;C)</string>
+   </property>
+  </action>
+  <action name="pasteAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/paste.bmp</normaloff>:/new/prefix1/images/paste.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>paste(&amp;V)</string>
+   </property>
+  </action>
+  <action name="cutAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/cut.bmp</normaloff>:/new/prefix1/images/cut.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>cut(&amp;X)</string>
+   </property>
+  </action>
+  <action name="selectAllAction">
+   <property name="text">
+    <string>check all(&amp;A)</string>
+   </property>
+  </action>
+  <action name="datetimeAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/Date.gif</normaloff>:/new/prefix1/images/Date.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Date(&amp;D)</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/new/prefix1/images/font.gif</normaloff>:/new/prefix1/images/font.gif</iconset>
+   </property>
+   <property name="text">
+    <string>font</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>color</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>about Qt</string>
+   </property>
+  </action>
+  <action name="actionWebsite">
+   <property name="text">
+    <string>website</string>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="text">
+    <string>update</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
